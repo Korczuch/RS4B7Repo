@@ -1,15 +1,29 @@
 import React, { useState } from "react";
 import './Login.css';
+import { useNavigate } from 'react-router-dom';
+
+const ADMIN_CREDENTIALS = {
+    username: "Korczuch",
+    password: "Password"
+};
+
 
 
 export const Login = () =>{
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
+    const navigate = useNavigate();
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(username)
-    }
+        if (username === ADMIN_CREDENTIALS.username && password === ADMIN_CREDENTIALS.password) {
+            navigate('/dashboard');
+        } else {
+            alert('Invalid credentials!');
+        }
+    };
 
     return(
         <div className="auth-form-container">

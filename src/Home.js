@@ -11,7 +11,7 @@ const pageTittle = "Audi RS4 B7 Registry";
 <div className="App">
       <header className="App-header">
       <h1>{pageTittle}</h1>
-        <img src={logo} className="Audi RS4 B7 Registry Logo" alt="logo" />
+        <img src={logo} className="Audi-RS4-B7-Registry-Logo" alt="logo" />
         <p3>Random car from registry, press on image to see car</p3>
       </header>
     
