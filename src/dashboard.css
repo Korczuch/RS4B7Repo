@@ -1,0 +1,25 @@
+button {
+    border: none;
+    background-color: rgb(248, 248, 248);
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bolder;
+    cursor: progress;
+  }
+  
+  /* Add styles for the form container if necessary */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0;
+    min-height: 20vh;
+    background-image: linear-gradient(#363636, #4b4a4a 48%, #363636);
+  }
+  
+  /* You may want to add some margin to the form elements for better spacing */
+  form > div {
+    margin: 0.5rem 0;
+  }

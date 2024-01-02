@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './NavBar';
 import Home from './Home';
 import AdminPanel from './adminPanel';
-import dashboard from './dashboard';
+import avant from './avant';
+import Dashboard from './dashboard';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/adminPanel" element={<AdminPanel />} />
-            <Route path="/dashboard" element={<dashboard />} />
+            <Route path="/avant" element={<avant />} />
+            <Route path='/dashboard' element={<Dashboard/>} />
           </Routes>
         </div>
       </div>

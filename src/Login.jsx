@@ -19,7 +19,7 @@ export const Login = () =>{
     const handleSubmit = (e) => {
         e.preventDefault();
         if (username === ADMIN_CREDENTIALS.username && password === ADMIN_CREDENTIALS.password) {
-            navigate('/dashboard');
+            navigate('/Dashboard');
         } else {
             alert('Invalid credentials!');
         }
